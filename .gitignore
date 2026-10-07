@@ -1,5 +1,27 @@
+# Environment variables
 .env
-.venv/
+.env.local
+
+# Virtual environments
 venv/
+.venv/
+env/
+ENV/
+
+# Python cache & build outputs
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+
+# Vector store & local data persistence
+*.chromadb
+.chroma/
