@@ -1,0 +1,17 @@
+Procedimento de Suporte Técnico: Resolução de Quedas de Conexão Wi-Fi Corporativo
+
+Descrição: Este procedimento orienta a equipe de Service Desk no diagnóstico e solução de problemas de desconexão frequente na rede Wi-Fi corporativa 'Empresa_Corp'.
+
+Passo 1: Verificação Inicial do Adaptador
+Verifique se o adaptador de rede sem fio está habilitado no Painel de Controle do dispositivo do usuário. Caso esteja desativado, reative o dispositivo e tente reconectar.
+
+Passo 2: Renovação de IP e Limpeza de Cache DNS
+Abra o Prompt de Comando (CMD) como Administrador e execute os seguintes comandos em sequência:
+1. ipconfig /release
+2. ipconfig /renew
+3. ipconfig /flushdns
+
+Passo 3: Reset de Configurações de Rede
+Se o usuário ainda não conseguir navegar, execute o comando 'netsh winsock reset' e reinicie o computador.
+
+Escalação: Caso o problema persista após o reinício, encaminhe o chamado para a equipe de Infraestrutura de Redes com o log do comando ipconfig /all.
