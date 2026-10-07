@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routers import health
+from app.routers import health, documents
 
 app = FastAPI(
     title="RAG Support API",
@@ -8,6 +8,7 @@ app = FastAPI(
 )
 
 app.include_router(health.router)
+app.include_router(documents.router)
 
 
 @app.get("/")
